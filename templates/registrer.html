@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registrer Høytorptreffet</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Høytorptreffet</h1>
+        <div class="navbar">
+            <a href="/">Hjem</a>
+            <a href="/aktiviteter.html">Aktiviteter</a>
+
+        </div>
+    </div>
+
+    <div class="registrering">
+        <form id="registreringsForm" action="" method="post">
+            <!--regirstrerings form-->
+            <h3>Deltager Informasjon</h3>
+            
+            <label for="fornavn">Fornavn:</label>
+            <input type="text" name="fornavn" id="fornavn" required>
+            
+            <label for="etternavn">Etternavn:</label>
+            <input type="text" name="etternavn" id="etternavn" required>
+            
+            <label for="email">Epost:</label>
+            <input type="text" name="email" id="email" required>
+            
+            <label for="tlf">Telefonnummer:</label>
+            <input type="text" name="tlf" id="tlf" required>
+            
+            <label for="adresse">adresse:</label>
+            <input type="text" name="adresse" id="adresse" required>
+            
+            <label for="by">By:</label>
+            <input type="text" name="by" id="by" required>
+
+            <label for="land">land:</label>
+            <input type="text" name="land" id="land" required>
+              <!--kjøretøy informasjon-->
+            <h3>Kjøretøy Informasjon</h3>
+
+            <label for="kjoretoy">Kjøretøy:</label>
+            <select id="kjoretoy" name="kjoretoy", required>
+              <option value=""></option> 
+              <option value="bil">Bil</option>
+              <option value="mc">Motorsykkel</option>
+              <option value="sykkel">Beltebil</option>
+              <option value="annet">Annet</option>
+            </select>
+
+            <label for="merke">Merke:</label>
+            <input type="text" name="merke" id="merke">
+
+            <label for="modell">Modell:</label>
+            <input type="text" name="modell" id="modell">
+
+            <label for="aar">Årstall:</label>
+            <input type="text" name="aar" id="aar">
+
+            <label for="reg">Registrerings nummer:</label>
+            <input type="text" name="reg" id="reg">
+
+            <!--Submit-->
+            <button type="submit">Registrer</button>
+
+        </form>
+    </div>
+</body>
+</html>
