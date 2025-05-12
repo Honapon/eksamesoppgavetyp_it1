@@ -17,7 +17,7 @@
     </div>
 
     <div class="registrering">
-        <form id="registreringsForm" action="" method="post">
+        <form id="registreringsForm" action="/submit_reg" method="POST">
             <!--regirstrerings form-->
             <h3>Deltager Informasjon</h3>
             
@@ -41,7 +41,7 @@
 
             <label for="land">land:</label>
             <input type="text" name="land" id="land" required>
-              <!--kjøretøy informasjon-->
+            <!--kjøretøy informasjon-->
             <h3>Kjøretøy Informasjon</h3>
 
             <label for="kjoretoy">Kjøretøy:</label>
@@ -49,7 +49,7 @@
               <option value=""></option> 
               <option value="bil">Bil</option>
               <option value="mc">Motorsykkel</option>
-              <option value="sykkel">Beltebil</option>
+              <option value="tanks">Beltebil</option>
               <option value="annet">Annet</option>
             </select>
 
@@ -64,6 +64,13 @@
 
             <label for="reg">Registrerings nummer:</label>
             <input type="text" name="reg" id="reg">
+
+            
+            <label for="eventYear">EventÅr:</label>
+            <input type="number" id="eventYear" name="eventYear" required>
+
+            <label for="comments">Kommentar:</label>
+            <textarea id="comments" name="comments"></textarea>
 
             <!--Submit-->
             <button type="submit">Registrer</button>
