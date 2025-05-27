@@ -107,6 +107,5 @@ def submit_reg():
 def registration_success():
     return "Takk for at du blir med på Høytorptreffet!!"        
         
-if __name__ == '__main__':
-    app.run(debug=True)
-    
+#if __name__ == '__main__':
+    #app.run(debug=True)
