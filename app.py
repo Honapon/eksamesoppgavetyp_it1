@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request, redirect, url_for
 import mysql.connector
 from mysql.connector import Error
+from waitress import serve
 
 app = Flask(__name__)
 
@@ -107,5 +108,6 @@ def submit_reg():
 def registration_success():
     return "Takk for at du blir med på Høytorptreffet!!"        
         
-#if __name__ == '__main__':
+if __name__ == '__main__':
     #app.run(debug=True)
+    serve(app, host='0.0.0.0', port=80)
